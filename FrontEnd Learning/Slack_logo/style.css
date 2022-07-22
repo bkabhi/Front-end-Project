@@ -1,0 +1,123 @@
+body{
+    background-color: purple;
+    margin: auto;
+} 
+.parent{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    background-color: rgb(255, 255, 255, 0.9);
+    border-radius: 50%;
+    padding: 1%;
+    margin-top: 10vh;
+    animation: anime 2s linear 0s infinite;
+}
+
+
+.first{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: -10px;
+}
+.first>div:first-child{
+    background-color: #31C7F1;
+    width: 70px;
+    height: 70px;
+    border-radius: 50% 50% 0 50%;
+}
+.first>div:last-child{
+    background-color: #31C7F1;
+    width: 160px;
+    height: 70px;
+    border-radius: 50px;
+}
+
+
+.second{
+    display: flex;
+    flex-direction: column;
+    transform: rotate(90deg);
+    align-items: flex-end;
+    gap: 20px;
+    padding: 20px;
+    /* margin-bottom: 10px; */
+}
+.second>div:first-child{
+    background-color: #2AB87D;
+    width: 70px;
+    height: 70px;
+    border-radius: 50% 50% 0 50%;
+}
+.second>div:last-child{
+    background-color: #2AB87D;
+    width: 160px;
+    height: 70px;
+    border-radius: 50px;
+}
+
+
+.third{
+    display: flex;
+    flex-direction: column;
+    transform: rotate(-90deg);
+    align-items: flex-end;
+    gap: 20px;
+    padding: 20px;
+}
+.third>div:first-child{
+    background-color: red;
+    width: 70px;
+    height: 70px;
+    border-radius: 50% 50% 0 50%;
+}
+.third>div:last-child{
+    background-color: red;
+    width: 160px;
+    height: 70px;
+    border-radius: 50px;
+}
+
+
+.fourth{
+    display: flex;
+    flex-direction: column;
+    transform: rotate(-180deg);
+    align-items: flex-end;
+    gap: 20px;
+    padding: 20px;
+}
+.fourth>div:first-child{
+    background-color: #EDB42A;
+    width: 70px;
+    height: 70px;
+    border-radius: 50% 50% 0 50%;
+}
+.fourth>div:last-child{
+    background-color: #EDB42A;
+    width: 160px;
+    height: 70px;
+    border-radius: 50px;
+}
+
+@keyframes anime {
+    /* 0%{
+        transform: rotateZ(0deg);
+    }
+    50%{
+        transform: rotateZ(180deg);
+    } */
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+
+footer{
+    text-align: center;
+    color: gray;
+    margin-top: 100px;
+}
